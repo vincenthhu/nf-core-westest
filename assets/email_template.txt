@@ -4,16 +4,16 @@
   |\\ | |__  __ /  ` /  \\ |__) |__         }  {
   | \\| |       \\__, \\__/ |  \\ |___     \\`-._,-`-,
                                         `._,._,'
-  nf-core/nfcoretest v${version}
+  nf-core/westest v${version}
 ----------------------------------------------------
 
 Run Name: $runName
 
 <% if (success){
-    out << "## nf-core/nfcoretest execution completed successfully! ##"
+    out << "## nf-core/westest execution completed successfully! ##"
 } else {
     out << """####################################################
-## nf-core/nfcoretest execution completed unsuccessfully! ##
+## nf-core/westest execution completed unsuccessfully! ##
 ####################################################
 The exit status of the task that caused the workflow execution to fail was: $exitStatus.
 The full error message was:
@@ -36,5 +36,5 @@ Pipeline Configuration:
 <% out << summary.collect{ k,v -> " - $k: $v" }.join("\n") %>
 
 --
-nf-core/nfcoretest
-https://github.com/nf-core/nfcoretest
+nf-core/westest
+https://github.com/nf-core/westest

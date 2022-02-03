@@ -1,4 +1,4 @@
-# nf-core/nfcoretest: Output
+# nf-core/westest: Output
 
 ## Introduction
 

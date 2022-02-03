@@ -1,8 +1,8 @@
 //
-// This file holds several functions specific to the workflow/nfcoretest.nf in the nf-core/nfcoretest pipeline
+// This file holds several functions specific to the workflow/westest.nf in the nf-core/westest pipeline
 //
 
-class WorkflowNfcoretest {
+class WorkflowWestest {
 
     //
     // Check and validate parameters

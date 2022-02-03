@@ -2,6 +2,6 @@ contact_links:
   - name: Join nf-core
     url: https://nf-co.re/join
     about: Please join the nf-core community here
-  - name: "Slack #nfcoretest channel"
-    url: https://nfcore.slack.com/channels/nfcoretest
-    about: Discussion about the nf-core/nfcoretest pipeline
+  - name: "Slack #westest channel"
+    url: https://nfcore.slack.com/channels/westest
+    about: Discussion about the nf-core/westest pipeline

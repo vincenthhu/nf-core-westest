@@ -7,22 +7,22 @@ on:
 jobs:
   run-tower:
     name: Run AWS tests
-    if: github.repository == 'nf-core/nfcoretest'
+    if: github.repository == 'nf-core/westest'
     runs-on: ubuntu-latest
     steps:
       - name: Launch workflow via tower
         uses: nf-core/tower-action@v2
-        
+
         with:
           workspace_id: ${{ secrets.TOWER_WORKSPACE_ID }}
           access_token: ${{ secrets.TOWER_ACCESS_TOKEN }}
           compute_env: ${{ secrets.TOWER_COMPUTE_ENV }}
           pipeline: ${{ github.repository }}
           revision: ${{ github.sha }}
-          workdir: s3://${{ secrets.AWS_S3_BUCKET }}/work/nfcoretest/work-${{ github.sha }}
+          workdir: s3://${{ secrets.AWS_S3_BUCKET }}/work/westest/work-${{ github.sha }}
           parameters: |
             {
-              "outdir": "s3://${{ secrets.AWS_S3_BUCKET }}/nfcoretest/results-test-${{ github.sha }}"
+              "outdir": "s3://${{ secrets.AWS_S3_BUCKET }}/westest/results-test-${{ github.sha }}"
             }
           profiles: test,aws_tower
           pre_run_script: 'export NXF_VER=21.10.3'

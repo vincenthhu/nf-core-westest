@@ -1,4 +1,4 @@
-# nf-core/nfcoretest: Citations
+# nf-core/westest: Citations
 
 ## [nf-core](https://pubmed.ncbi.nlm.nih.gov/32055031/)
 
